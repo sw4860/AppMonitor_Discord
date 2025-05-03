@@ -83,7 +83,7 @@ In the "", you should put the port value obtained during the ADB setup.
 
 `"package": "com.gear2.growslayer"` This part is where you set "which app to check".
 You must enter the package name of the app you want to monitor accurately.
-The current default value is to check Grow Slayer.
+The current default value is to check Slayer Legend.
 
 `"interval": 300` This part is where you set "how often to check".
 You write the time in numbers, and the unit is "seconds". For example, if you write 300, it checks every 300 seconds (5 minutes).

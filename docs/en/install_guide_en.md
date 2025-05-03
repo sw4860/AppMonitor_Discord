@@ -15,4 +15,4 @@ To use `AppMonitor_Discord`, you need the following ADB files:
 ⚠️ These files are not included in the project due to licensing restrictions. Please install them manually.
 
 ## Setup Instructions
-[Setup Guide (English)](setup_guide.md)
+[Setup Guide (English)](setup_guide_en.md)
