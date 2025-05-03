@@ -1,0 +1,9 @@
+{
+    "device": "",
+    "package": "com.gear2.growslayer",
+    "interval": 300,
+    "webhook_url": "",
+    "mention": "",
+    "default_language": "ko",
+    "available_languages": ["ko", "en"]
+  }
