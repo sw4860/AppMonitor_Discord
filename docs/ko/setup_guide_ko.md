@@ -57,7 +57,7 @@
 하나씩 자세히 알아보겠습니다.
 
 `"device": ""` 이 부분은 "어떤 기기에서 검사를 할것인지"를 설정하는 곳입니다.
-</br>`""`안에는 위에 ADB관련 설정할때 알아낸 포트 값을 넣으면 됩니다.
+</br>`""`안에는 위에 ADB관련 설정할때 알아낸 포트(127.0.0.1:포트 번호) 값을 넣으면 됩니다.
 
 `"package": "com.gear2.growslayer"` 이 부분은 "어떤 앱을 검사할건지"를 설정하는 곳입니다.
 </br>모니터링하고 싶은 앱의 패키지 이름을 정확하게 입력해야 합니다.
@@ -73,6 +73,7 @@
 2. 채널 설정 > 통합 > Webhook > 새 Webhook 생성
     * 이를 위해선 관리자 권한이 필요합니다.
 3. URL 복사 후 webhook_url의 ""안에 붙여넣기
+**⚠ 해당 url이 유출되지않도록 주의하시길 바랍니다.**
 
 `"mention": ""` 이 부분은 "메시지를 보낼 때 누구를 멘션 할것인지"를 설정하는 곳입니다.
 </br>사용자 ID나 역할 ID는 Discord 설정에서 확인할 수 있습니다.
@@ -99,14 +100,15 @@
     "device": "127.0.0.1:5555",
     "package": "com.example.myapp",
     "interval": 60,
-    "webhook_url": "https://discord.com/api/webhooks/123456789012345678/abcdefghijklmnopqrstuvwxyz",
+    "webhook_url": "복사한 웹훅 url 링크",
     "mention": "123456789012345678",
     "default_language": "en",
     "available_languages": ["ko", "en"]
 }
 ```
 
-**주의사항**
+**⚠ 주의사항**
 </br>JSON 문법을 정확하게 지켜야 합니다. 쉼표, 따옴표, 중괄호 등을 빠뜨리거나 잘못 쓰면 프로그램이 제대로 작동하지 않을 수 있습니다.
 </br>각 설정 항목에 맞는 종류의 값을 넣어줘야 합니다. 예를 들어, 시간 간격(interval)은 숫자로, 웹훅 URL(webhook_url)은 인터넷 주소처럼 써야 합니다.
 </br>webhook_url과 mention은 Discord에서 웹훅 설정과 사용자/역할 ID를 얻는 설정을 먼저 완료해야 제대로 사용할 수 있습니다.
+</br>위에서 이미 한번 언급하였지만 webhook_url은 유출되지않도록 주의하여야합니다. 해당 채널이 테러를 당할 여지가 있습니다.

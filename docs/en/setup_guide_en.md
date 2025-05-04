@@ -2,7 +2,7 @@
 
 **This document has been translated from the original Korean version using AI.**
 
-`AppMonitor_Discord` is only compatible with Android emulators (BlueStacks, Nox Player, LDPlayer, etc.) and communicates with the emulator via ADB.
+`AppMonitor_Discord` is primarily intended for use with Android emulators such as BlueStacks, Nox Player, or LDPlayer, and communicates with them via ADB.
 
 ## Setup Guide
 
@@ -57,7 +57,7 @@ This code is the default value of the config.json file.
 Let's take a closer look at each part.
 
 `"device": ""` This part is where you set "which device to check".
-</br>In the "", you should put the port value obtained during the ADB setup.
+</br>Insert the value you got earlier from the ADB setup (e.g., 127.0.0.1:port number) inside the quotes.
 
 `"package": "com.gear2.growslayer"` This part is where you set "which app to check".
 </br>You must enter the package name of the app you want to monitor accurately.
@@ -74,12 +74,13 @@ Go to the desired channel in Discord.
 1. Channel Settings > Integrations > Webhooks > Create Webhook
 2. Administrator privileges are required for this.
 3. Copy the URL and paste it into the "" of webhook_url.
+⚠ Be careful not to leak this URL — it can be exploited!
 
 `"mention": ""` This part is where you set "who to mention when sending a message".
 </br>User IDs or role IDs can be found in Discord settings.
 </br>The method to find the ID is as follows:
 1. Discord Settings > Advanced > Enable Developer Mode
-2. Right-click on the user or role to mention > Copy ID
+2. Right-click the user or role you want to mention > Copy ID.
 Result examples:
 </br>User: <@123456789012345678>
 </br>Role: <@&987654321098765432>
@@ -105,7 +106,8 @@ For example, if you want to monitor the app "com.example.myapp" on the BlueStack
     "available_languages": ["ko", "en"]
 }
 ```
-**Precautions**
-</br>You must adhere to the JSON syntax accurately. If you omit or write commas, quotation marks, curly braces, etc., incorrectly, the program may not work properly.
-</br>You must enter values that match the data type of each configuration item. For example, the time interval (interval) should be a number, and the webhook URL (webhook_url) should be a web address.
-</br>You must complete the webhook setup and user/role ID retrieval settings in Discord before you can properly use webhook_url and mention.
+⚠ Caution
+</br>Make sure to follow proper JSON syntax. A missing or misplaced comma, quote, or bracket can cause the program to fail.
+</br>Each field must have the correct value type. For example, interval must be a number, webhook_url must be a valid URL, etc.
+</br>You must first complete the Discord webhook and user/role ID setup before using webhook_url and mention properly.
+</br>As mentioned earlier, never share your webhook_url. If leaked, your channel could be vulnerable to spam or attacks.
