@@ -100,7 +100,7 @@ For example, if you want to monitor the app "com.example.myapp" on the BlueStack
     "device": "127.0.0.1:5555",
     "package": "com.example.myapp",
     "interval": 60,
-    "webhook_url": "[https://discord.com/api/webhooks/123456789012345678/abcdefghijklmnopqrstuvwxyz](https://discord.com/api/webhooks/123456789012345678/abcdefghijklmnopqrstuvwxyz)",
+    "webhook_url": "your_copied_webhook_url_here",
     "mention": "123456789012345678",
     "default_language": "en",
     "available_languages": ["ko", "en"]
