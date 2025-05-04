@@ -1,5 +1,5 @@
 ('C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - '
- 'Main\\build\\main\\PYZ-00.pyz',
+ 'Release\\build\\main\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
@@ -440,7 +440,7 @@
    'PYMODULE'),
   ('config',
    'C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - '
-   'Main\\config.py',
+   'Release\\config.py',
    'PYMODULE'),
   ('configparser',
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\configparser.py',
@@ -728,7 +728,8 @@
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\glob.py',
    'PYMODULE'),
   ('gui',
-   'C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - Main\\gui.py',
+   'C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - '
+   'Release\\gui.py',
    'PYMODULE'),
   ('gzip',
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\gzip.py',
@@ -865,7 +866,7 @@
    'PYMODULE'),
   ('logger',
    'C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - '
-   'Main\\logger.py',
+   'Release\\logger.py',
    'PYMODULE'),
   ('logging',
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py',
@@ -881,7 +882,7 @@
    'PYMODULE'),
   ('monitor',
    'C:\\Users\\acea1\\Desktop\\AppMonitor - discord\\AppMonitor - '
-   'Main\\monitor.py',
+   'Release\\monitor.py',
    'PYMODULE'),
   ('multiprocessing',
    'C:\\Users\\acea1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\multiprocessing\\__init__.py',
